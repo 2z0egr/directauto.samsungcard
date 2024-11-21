@@ -578,9 +578,7 @@ body{ font-family: 'Noto Sans KR', sans-serif; font-size: 18px; color: #151515; 
     #event .main_area{ 
         width: 100%; gap: 5%; align-content: flex-start; flex-wrap: wrap;
     }
-    #event .main_area>div{ 
-        min-width: auto; width: 30%; height: 40%; gap: 16px; margin-top: 24px;
-    }
+    /**/
     #event .main_area>div>.img_wrap{ width: 94%; height: 80%; }
     #event .main_area>div>.text>strong{ display: none;}
     #event .main_area>div>.text>p{ 
@@ -625,14 +623,24 @@ body{ font-family: 'Noto Sans KR', sans-serif; font-size: 18px; color: #151515; 
     #only_desktop{  display:block; }
     .mobile_only{ display: none;}
     #mobile_nav{ display: none;}
-  }
+}
 @media screen and (min-width:769px) and (max-width:1024px){
     #only_desktop{ display:none; }
     .mobile_only{ display: none;}
     #mobile_nav{ display: none;}
-  }
+}
 @media screen and (max-width:768px){
     #only_desktop{ display:none; }
     .mobile_only{ display: block;}
     .out_p{ display: none;}
-  }
+}
+@media screen and (min-width:427px) and (max-width:768px){
+    #event .main_area>div{ 
+        min-width: auto; width: 30%; height: 40%; gap: 16px; margin-top: 24px;
+    }
+}
+@media screen and (max-width:426px){
+    #event .main_area>div{ 
+        min-width: auto; width: 47%; height: 40%; gap: 16px; margin-top: 24px;
+    }
+}
